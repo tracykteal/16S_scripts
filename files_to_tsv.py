@@ -29,7 +29,7 @@ for fname in dirList:
 
 output = open(outputfile, 'w')
 
-for i in names_R1:
+for i in sorted(names_R1.iterkeys()):
     output.write('%s\t%s\t%s\n' % (i, names_R1[i], names_R2[i]))
 
 
